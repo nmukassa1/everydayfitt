@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Comfortaa';
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-container {
+  width: 90%;
+  padding-bottom: 2rem;
+}
+
+header {
+  text-align: center;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  color: #455F4A;
+  font-weight: bold;
+  letter-spacing: -1px;
+  font-size: 2.43rem;
+}
+
+h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 1.43rem;
+  letter-spacing: 3px;
+}
+
+.title-card {
+  height: 158px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  margin: 1rem 0;
+  border: 2px solid black;
+  position: relative;
+}
+
+.title-card h2 {
+  color: black;
+  font-weight: 600;
+  font-size: 1.43rem;
+  letter-spacing: 3px;
+}
+
+.title-card .warm-up-time, .title-card .main-workout-time, .title-card .stretch-time {
+  position: absolute;
+  bottom: 7%;
+  left: 7%;
+}
+
+.exercise {
+  margin-top: 2rem;
+}
+
+.exercise div + div {
+  margin-top: 1rem;
+}
+
+.exercise__number {
+  background-color: #44604A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 9999px;
+}
+
+.exercise__number span {
+  color: white;
+  font-size: 1.43rem;
+}
+
+.exercise__name h3 {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.exercise__context ul {
+  padding: 0;
+}
+
+.exercise__context ul li {
+  list-style-type: '-';
+  font-size: .85rem;
+}
+
+.exercise__context ul li::marker {
+  color: #44604A;
+}
+
+.exercise__steps li::marker {
+  color: #44604A;
+}
+
+.exercise__steps li + li {
+  margin-top: .9rem;
+}
+
+#main-workout {
+  margin-top: 5rem;
+}
+
+.exercise__video {
+  overflow: hidden;
+}
+
+video {
+  border-radius: 15px;
+}
+
+#stretch-pictures {
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+
+#stretch-pictures .arrows {
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#stretch-pictures .arrows button {
+  border: 1px solid black;
+  border-radius: 448px;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.301);
+}
+
+#stretch-pictures .arrows button:first-child {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#stretch-pictures .arrows i {
+  pointer-events: none;
+}
+
+#stretch-pictures ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: .7s all ease-in-out;
+  transition: .7s all ease-in-out;
+}
+
+#stretch-pictures ul li {
+  list-style: none;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+#stretch-pictures ul li h2 {
+  position: absolute;
+  font-size: 1rem;
+  left: 7%;
+  top: 7%;
+}
+
+#stretch-pictures ul li h2 span {
+  display: block;
+}
+
+#stretch-pictures ul li h3 {
+  position: absolute;
+  bottom: 7%;
+  right: 7%;
+  font-size: .5rem;
+  color: white;
+}
+
+#stretch-pictures ul li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
