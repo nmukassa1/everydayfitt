@@ -182,7 +182,7 @@ class Post {
                     <h3>${x.name}</h3>
                 </div>
                 <div class="exercise__video">
-                    <video width="100%" src="${x.video}" autoplay="true" loop="true" control="true" muted playsinline="true"></video>
+                    <video width="100%" src="${x.video}" autoplay loop muted></video>
                 </div>
                 <div class="exercise__context">
                     <ul>
