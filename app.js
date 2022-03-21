@@ -201,9 +201,15 @@ class Post {
 }
 
 const warmUpFunction = new Post(warmUp)
-warmUpFunction.post()
+//warmUpFunction.post()
 const mainWorkoutFunction = new Post(mainWorkout)
-mainWorkoutFunction.post()
+//mainWorkoutFunction.post()
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    warmUpFunction.post();
+    mainWorkoutFunction.post()
+})
 
 
 
